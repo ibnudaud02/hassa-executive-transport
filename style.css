@@ -1,0 +1,777 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#111;
+color:white;
+}
+
+header{
+
+position:fixed;
+top:0;
+width:100%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:20px 8%;
+
+background:rgba(10,10,10,.82);
+
+backdrop-filter:blur(12px);
+
+z-index:1000;
+
+}
+
+.logo{
+
+font-size:30px;
+font-weight:700;
+color:#D4AF37;
+
+}
+
+nav a{
+
+text-decoration:none;
+color:#E5E5E5;
+margin-left:30px;
+font-size:22px;
+font-weight:500;
+transition:.3s;
+
+}
+
+nav a:visited{
+color:#E5E5E5;
+}
+
+nav a:hover{
+color:#D4AF37;
+}
+
+nav a:active{
+color:#D4AF37;
+}
+
+.hero{
+
+height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url(images/hero.jpg);
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:20px;
+
+}
+
+.hero h1{
+
+font-size:68px;
+max-width:900px;
+
+}
+
+.hero p{
+
+margin-top:20px;
+font-size:28px;
+max-width:700px;
+line-height:1.6;
+
+}
+
+.buttons{
+
+margin-top:40px;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:20px;
+flex-wrap:wrap;
+
+}
+
+.btn{
+
+padding:16px 35px;
+
+border-radius:40px;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.gold{
+
+background:#D4AF37;
+color:black;
+
+}
+
+.gold:hover{
+
+background:white;
+
+}
+
+.whatsapp{
+
+background:#25D366;
+color:white;
+
+}
+
+.whatsapp:hover{
+
+background:#1ca851;
+
+}
+
+.features,
+.services{
+
+padding:100px 10%;
+text-align:center;
+
+}
+
+.features h2,
+.services h2{
+
+font-size:50px;
+margin-bottom:50px;
+color:#D4AF37;
+
+}
+
+.feature-grid,
+.service-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+}
+
+.feature,
+.service-card{
+
+background:#1c1c1c;
+
+padding:35px;
+
+border-radius:15px;
+
+transition:.3s;
+
+}
+
+.feature:hover,
+.service-card:hover{
+
+transform:translateY(-10px);
+
+background:#242424;
+
+}
+
+footer{
+
+padding:80px 10%;
+text-align:center;
+background:black;
+
+}
+
+footer h2{
+
+color:#D4AF37;
+margin-bottom:20px;
+
+}
+
+footer p{
+
+margin:10px;
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:42px;
+
+.contact-grid{
+    grid-template-columns:1fr;
+}
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.buttons{
+
+flex-direction:column;
+
+}
+
+header{
+
+flex-direction:column;
+
+}
+
+nav{
+
+margin-top:15px;
+
+}
+
+nav a{
+
+margin:0 8px;
+
+}
+
+}
+
+.floating-whatsapp{
+
+position:fixed;
+
+right:25px;
+
+bottom:25px;
+
+width:65px;
+
+height:65px;
+
+background:#25D366;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:30px;
+
+text-decoration:none;
+
+color:white;
+
+box-shadow:0 10px 25px rgba(0,0,0,.35);
+
+transition:.3s;
+
+z-index:9999;
+
+}
+
+.floating-whatsapp:hover{
+
+transform:scale(1.1);
+
+}
+
+/* ===========================
+   Statistics Section
+=========================== */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:30px;
+    padding:80px 10%;
+    background:#181818;
+    text-align:center;
+}
+
+.stat h2{
+    font-size:42px;
+    color:#D4AF37;
+}
+
+.stat p{
+    margin-top:10px;
+    color:#ddd;
+}
+
+/* ===========================
+   Fleet Section
+=========================== */
+
+.fleet{
+    padding:100px 10%;
+    text-align:center;
+    background:#111;
+}
+
+.fleet h2{
+    color:#D4AF37;
+    margin-bottom:50px;
+    font-size:50px;
+}
+
+.fleet-card{
+    max-width:700px;
+    margin:auto;
+    background:#1b1b1b;
+    padding:30px;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.fleet-card:hover{
+    transform:translateY(-8px);
+}
+
+.fleet-card img{
+    width:100%;
+    border-radius:15px;
+    margin-bottom:25px;
+}
+
+.fleet-card h3{
+    margin-bottom:15px;
+}
+
+/* ===========================
+   Booking Process
+=========================== */
+
+.booking-process{
+    padding:100px 10%;
+    text-align:center;
+    background:#181818;
+}
+
+.booking-process h2{
+    color:#D4AF37;
+    margin-bottom:50px;
+}
+
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.process-grid div{
+    background:#222;
+    padding:30px;
+    border-radius:15px;
+}
+
+/* ===========================
+   Reviews
+=========================== */
+
+.reviews{
+    padding:100px 10%;
+    text-align:center;
+}
+
+.reviews h2{
+    color:#D4AF37;
+    margin-bottom:30px;
+}
+
+.coming-soon{
+    font-size:20px;
+    line-height:1.8;
+    color:#ddd;
+}
+
+/* ===========================
+   FAQ
+=========================== */
+
+.faq{
+    padding:100px 10%;
+    background:#181818;
+}
+
+.faq h2{
+    text-align:center;
+    color:#D4AF37;
+    margin-bottom:50px;
+}
+
+.faq-item{
+    background:#222;
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:20px;
+}
+
+.faq-item h3{
+    color:#D4AF37;
+    margin-bottom:10px;
+}
+
+.hero h1,
+.hero p,
+.buttons{
+    animation:fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp{
+
+from{
+    opacity:0;
+    transform:translateY(30px);
+}
+
+to{
+    opacity:1;
+    transform:translateY(0);
+}
+
+}
+
+.trust{
+    margin-top:35px;
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+    justify-content:center;
+    color:#ddd;
+    font-size:16px;
+}
+
+/* Scroll Animation */
+
+.features,
+.services,
+.fleet,
+.booking-process,
+.reviews,
+.faq,
+.stats{
+
+opacity:0;
+transform:translateY(50px);
+transition:all 1s ease;
+
+}
+
+.show{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+.feature,
+.service-card,
+.fleet-card,
+.process-grid div,
+.faq-item{
+
+background:linear-gradient(145deg,#1d1d1d,#151515);
+
+border:1px solid rgba(212,175,55,.15);
+
+border-radius:18px;
+
+}
+
+.feature:hover,
+.service-card:hover,
+.fleet-card:hover,
+.faq-item:hover,
+.process-grid div:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 15px 35px rgba(212,175,55,.25);
+
+}
+
+/* Fleet Gallery */
+
+.fleet-gallery{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+
+margin-top:50px;
+
+}
+
+.fleet-card{
+
+background:#1c1c1c;
+
+border-radius:18px;
+
+overflow:hidden;
+
+transition:0.4s;
+
+}
+
+.fleet-card img{
+
+width:100%;
+
+height:240px;
+
+object-fit:cover;
+
+transition:.5s;
+
+}
+
+.fleet-card{
+
+overflow:hidden;
+
+}
+
+.fleet-card:hover img{
+
+transform:scale(1.05);
+
+}
+
+.fleet-card h3{
+
+margin:20px 0 10px;
+
+color:#D4AF37;
+
+}
+
+.fleet-card p{
+
+padding:0 20px 25px;
+
+line-height:1.7;
+
+color:#ddd;
+
+}
+
+.fleet-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 40px rgba(212,175,55,.2);
+
+}
+
+/* ===========================
+   Call To Action
+=========================== */
+
+.cta{
+
+padding:100px 10%;
+
+text-align:center;
+
+background:linear-gradient(135deg,#1a1a1a,#0d0d0d);
+
+}
+
+.cta h2{
+
+font-size:52px;
+
+color:#D4AF37;
+
+margin-bottom:25px;
+
+}
+
+.cta p{
+
+font-size:22px;
+
+max-width:850px;
+
+margin:0 auto 40px;
+
+line-height:1.8;
+
+color:#ddd;
+
+}
+
+section{
+
+position:relative;
+
+}
+
+header{
+
+border-bottom:1px solid rgba(212,175,55,.15);
+
+}
+
+/* ===========================
+   Contact Section
+=========================== */
+
+.contact{
+    padding:100px 10%;
+    background:#111;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:58px;
+    color:#D4AF37;
+    margin-bottom:50px;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+    max-width:900px;
+    margin:0 auto;
+}
+
+.contact-card{
+    background:#1c1c1c;
+    padding:35px;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.contact-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(212,175,55,.2);
+}
+
+.contact-card h3{
+    font-size:28px;
+    color:#D4AF37;
+    margin-bottom:15px;
+}
+
+.contact-card p{
+    font-size:20px;
+    color:#ddd;
+    line-height:1.6;
+    word-wrap:break-word;
+    overflow-wrap:break-word;
+}
+
+.btn{
+    display:inline-block;
+    padding:18px 40px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:600;
+    font-size:20px;
+    transition:all .3s ease;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.email{
+    font-size:18px;
+}
+
+.socials{
+    margin-top:30px;
+}
+
+.socials a{
+    color:#D4AF37;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:18px;
+    transition:.3s;
+}
+
+.socials a:hover{
+    color:white;
+}
+
+.contact-card a{
+    color:#ddd;
+    text-decoration:none;
+}
+
+.contact-card a:hover{
+    color:#D4AF37;
+}
+
+/* ===========================
+   Back To Top Button
+=========================== */
+
+.back-to-top{
+    position:fixed;
+    bottom:100px;
+    right:25px;
+    width:50px;
+    height:50px;
+    background:#D4AF37;
+    color:#111;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:24px;
+    font-weight:bold;
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+    transition:.3s;
+    z-index:999;
+}
+
+.back-to-top:hover{
+    transform:translateY(-5px);
+    background:#fff;
+}

@@ -35,11 +35,18 @@ z-index:1000;
 }
 
 .logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:#D4AF37;
+    font-size:30px;
+    font-weight:700;
+}
 
-font-size:30px;
-font-weight:700;
-color:#D4AF37;
-
+.logo img{
+    width:55px;
+    height:55px;
+    object-fit:contain;
 }
 
 nav a{

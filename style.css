@@ -837,3 +837,27 @@ border-bottom:1px solid rgba(212,175,55,.15);
     color: #D4AF37;
     font-size: 20px;
 }
+
+/* ===========================
+   Why Choose Us
+=========================== */
+
+.why-us{
+    padding:100px 10%;
+    background:#111;
+    text-align:center;
+}
+
+.why-us h2{
+    font-size:50px;
+    color:#D4AF37;
+    margin-bottom:20px;
+}
+
+.why-us .section-subtitle{
+    max-width:800px;
+    margin:0 auto 50px;
+    color:#ddd;
+    font-size:20px;
+    line-height:1.8;
+}

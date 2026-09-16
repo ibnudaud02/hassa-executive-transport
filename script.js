@@ -9,7 +9,7 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 document.querySelectorAll(
-".features, .services, .fleet, .booking-process, .reviews, .faq, .stats, .cta, .contact"
+".features, .services, .fleet, .booking-process, .testimonials, .faq, .stats, .cta, .contact"
 ).forEach(el => observer.observe(el));
 
 // Header Resize

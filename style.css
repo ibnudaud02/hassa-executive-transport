@@ -494,12 +494,12 @@ to{
 .booking-process,
 .testimonials,
 .faq,
-.stats{
-    
-opacity:0;
-transform:translateY(50px);
-transition:all 1s ease;
-
+.stats,
+.cta,
+.contact {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
 }
 
 .show{

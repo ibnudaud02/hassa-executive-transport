@@ -861,3 +861,51 @@ border-bottom:1px solid rgba(212,175,55,.15);
     font-size:20px;
     line-height:1.8;
 }
+
+/* ===========================
+   Booking Form
+=========================== */
+
+.booking-form{
+    padding:100px 10%;
+    background:#181818;
+    text-align:center;
+}
+
+.booking-form h2{
+    font-size:50px;
+    color:#D4AF37;
+    margin-bottom:20px;
+}
+
+.booking-form .section-subtitle{
+    color:#ddd;
+    margin-bottom:40px;
+    font-size:20px;
+}
+
+#quoteForm{
+    max-width:650px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+#quoteForm input{
+    padding:18px;
+    border-radius:10px;
+    border:1px solid #444;
+    background:#222;
+    color:#fff;
+    font-size:18px;
+}
+
+#quoteForm input:focus{
+    outline:none;
+    border-color:#D4AF37;
+}
+
+#quoteForm button{
+    margin-top:10px;
+}
